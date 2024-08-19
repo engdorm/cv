@@ -20,19 +20,19 @@ var initDot = document.getElementById("loading");
        var $identityDiv = $("#identity-results");
        var $name = "NAME: Dor Marcus";
        var $alias = "KNOWN ALIAS: PETRUSR3X"
-       var $occupation  = "OCCUPATION: Developer, Engineer, Code artist";
-       var $frontEnd  = "FRONT END DEVELOPMENT CORE: HTML5 | CSS3 | JAVASCRIPT";
-         var $JSFrameworks = "JAVASCRIPT FRAMEWORKS: ANGULARJS";
-         var $JSLibs = "JAVASCRIPT LIBRARIES: JQUERY | D3 | C3";
-         var $CSSFrameworks = "CSS FRAMEWORKS: BOOTSTRAP | SEMANTIC UI";
-         var $CSSPre = "CSS PREPROCESSORS: SASS | LESS | STYLUS";
-         var $frontEndAnimation = "FRONT END ANIMATION: CANVAS | HTML5 | SVG";
-       var $cmsDevelopment = "WORDPRESS DEVELOPMENT: WORDPRESS";
-         var $wordpress = "WORDPRESS: CUSTOM THEMING | PLUGINS";
-       var $design = "DESIGN CORE: ADOBE SUITE";
-         var $webDesign = "WEB DESIGN: INDESIGN CC | MUSE CC";
-         var $branding = "ILLUSTRATIONS & BRANDING: ILLUSTRATOR CC | PHOTOSHOP CC";
-         var $designAnimation = "ANIMATION DESIGN: AFTER EFFECTS CC | FLASH CC";
+       var $occupation  = "OCCUPATION: Devehoper, Engineer, Code artist";
+       var $frontEnd  = "Main tech:";
+         var $JSFrameworks = "Languages: C, C++, Python, C#, Java";
+         var $JSLibs = "Infrastructure: Linux,  Android, webserverse";
+         var $CSSFrameworks = "Tools: Redis, Docker, SQL, InfulxDB, Ros";
+         var $CSSPre = "Specific experiance: Networking, Compiler, simulation, drivers, FW";
+         var $frontEndAnimation = "General experiance: Optimization, memory management, architecture design, security";
+       var $cmsDevelopment = "Algorithms:";
+         var $wordpress = "Vision, Robot navigations, Artificial intelligence, quantum computing";
+       var $design = "Personal skills:";
+         var $webDesign = "Tech leader, team player, communication, multitasking";
+         var $branding = "Team leader, project managment, planning, good vibes generator :)";
+         var $designAnimation = "Tech enthusist, terminal lover, vim wizard, keyboard groopy";
          
       function initIdentityResults(i){
           $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -67,26 +67,13 @@ var initDot = document.getElementById("loading");
                      }else{
                         $("#name").removeClass("cursor");
                         setTimeout(function() {
-                           initAlias(0);
+                           initOccupation(0);
                         }, 1500);      
                      }
                }
                setTimeout(function() {
                   initName(0);
                }, 2500);
-            }
-            function initAlias(i){
-                  $("#alias").addClass("sign cursor").text($alias.substring(0, i));
-                     if(i < $alias.length){
-                        setTimeout(function(){
-                           initAlias(i + 1);   
-                        }, 35);
-                     }else{
-                        $("#alias").removeClass("cursor");
-                        setTimeout(function() {
-                           initOccupation(0);
-                        }, 1500);
-                     }
             }
             function initOccupation(i){
                $("#occupation").addClass("sign cursor").text($occupation.substring(0, i));
