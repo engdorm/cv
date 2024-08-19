@@ -16,7 +16,7 @@ var initDot = document.getElementById("loading");
    
    var initProgram = setTimeout(function(){
        var greeting = "UNIDENTIFIED ORGANIC LIFEFORM DETECTED";
-       var message = "RUNNING CODEPEN RESUME PROTOCAL (CRP) FOR @GOTHBURZ";
+       var message = "RUNNING  GEEK RESUME PROTOCAL (GRP) FOR Dor";
        var $identityDiv = $("#identity-results");
        var $name = "NAME: Dor Marcus";
        var $alias = "KNOWN ALIAS: PETRUSR3X"
@@ -168,7 +168,7 @@ var initDot = document.getElementById("loading");
                   }
             }
             function initCMSDevelopment(i){
-               $('#cms-span').addClass("fa fa-wordpress")
+               $('#cms-span').addClass("fa fa-laptop")
                $('#CMS-development').addClass("cursor").text($cmsDevelopment.substring(0, i));
                   if(i < $cmsDevelopment.length){
                      setTimeout(function(){
