@@ -96,6 +96,13 @@ i.material-icons {
   font-size: inherit;
   line-height: inherit;
 }
+ul.cir {
+  list-style-type: disk;
+}
+
+ul.sq {
+  list-style-type: square;
+}
 ::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -507,3 +514,4 @@ Page Styles
     font-weight: 500;
     letter-spacing: 5px;
 }
+
